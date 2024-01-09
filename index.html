@@ -15,6 +15,7 @@ body {
   height: auto;
 }
 
+
 #image-container {
   height: auto;
   width: 100vw;
@@ -37,6 +38,11 @@ h2 {
   opacity: 0;
 }
 
+#message {
+  opacity: 0;
+  position: fixed;
+}
+
 @media screen and (max-width: 768px) {
 
   body {
@@ -49,11 +55,17 @@ h2 {
   margin-left: 14vw;
   margin-right: auto;
   z-index: 99;
-  opacity: 0.4;
+  opacity: 0;
   font-family: Times, serif;
   font-weight: 100;
 }
 
+#message {
+  margin: auto;
+  z-index: 99;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+}
   #animation-container {
     width: auto;
     height: auto;
@@ -62,27 +74,65 @@ h2 {
 
   #image-container {
     width: auto;
-    height: 140vh; /* Adjusting width for smaller screens */
-    opacity: 0.6; /* Adjusting opacity for smaller screens */
+    height: 140vh;
+    opacity: 0.6; 
   }
 
   audio {
     margin-top: 10vh;
     margin-left: 10vw;
     margin-right: auto;
-    align-content: center; /* This property doesn't exist, consider removing it */
     z-index: 99;
-    mix-blend-mode: multiply; /* Adjusting margin for smaller screens */
+    mix-blend-mode: multiply; 
   }
+
+  @media (min-width:420px)  { 
+    
+    body {
+  overflow: hidden;
+  margin: 0px;
+}
+
+#message {
+  margin: auto;
+  z-index: 99;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
+}
+  #animation-container {
+    height: auto;
+    width: auto;
+    opacity: 0.6;
+  }
+
+  #image-container {
+    width: auto;
+    height: auto; 
+    opacity: 0.6; 
+  }
+
+  audio {
+    margin: auto;
+    scale: 2;
+    z-index: 99;
+    mix-blend-mode: multiply; 
+  }
+   }
 }
   </style>
 </head>
 <body>
   
   <h2>A Mix for Spring<br>Live From Green Hall</h2>
+
 <audio controls>
   <source src="https://docs.google.com/uc?export=open&id=1rYdtWl02tBJhoflvfaI2cxFkKSWN_t7z" type="audio/mp3">
 </audio>
+ 
+<div>
+  <img id="message" src="Messages/Page_99.jpeg">
+</div>
+
 
   <div id="animation-container">
     <img id="image-container" src="" alt="Image">
