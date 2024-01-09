@@ -2,41 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Image Animation</title>
+  <title>A Mix for Spring</title>
   <style>
-    body{
-    overflow: hidden;
-    margin: 0px;
+
+body {
+  overflow: hidden;
+  margin: 0px;
 }
-    #animation-container {
-      width: 100%;
-      height: auto;
-    }
-    #image-container{
-        height: 100vh;
-        opacity: 60%;
-    }
-    audio{
-      position: fixed;
-      z-index: 99;
-      margin-top: 16.5%;
-      margin-left: 70%;
-      mix-blend-mode: multiply;
-    }
-    h2{
-      position: fixed;
-      z-index: 99;
-      margin-top: 6%;
-      margin-left: 5%;
-      opacity: 0;
-    }
+
+#animation-container {
+  width: 100%;
+  height: auto;
+}
+
+#image-container {
+  height: auto;
+  width: 100vw;
+  opacity: 0.6;
+}
+
+audio {
+  position: fixed;
+  z-index: 99;
+  margin-top: 16.5%;
+  margin-left: 70%;
+  mix-blend-mode: multiply;
+}
+
+h2 {
+  position: fixed;
+  z-index: 99;
+  margin-top: 6%;
+  margin-left: 5%;
+  opacity: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+  overflow: hidden;
+  margin: 0px;
+}
+
+h2 {
+  margin-top: 20vh;
+  margin-left: 14vw;
+  margin-right: auto;
+  z-index: 99;
+  opacity: 0.4;
+  font-family: Times, serif;
+  font-weight: 100;
+}
+
+  #animation-container {
+    width: auto;
+    height: auto;
+    opacity: 0.6;
+  }
+
+  #image-container {
+    width: auto;
+    height: 140vh; /* Adjusting width for smaller screens */
+    opacity: 0.6; /* Adjusting opacity for smaller screens */
+  }
+
+  audio {
+    margin-top: 10vh;
+    margin-left: 10vw;
+    margin-right: auto;
+    align-content: center; /* This property doesn't exist, consider removing it */
+    z-index: 99;
+    mix-blend-mode: multiply; /* Adjusting margin for smaller screens */
+  }
+}
   </style>
 </head>
 <body>
   
-  <h2>Embedded MP3 Audio</h2>
+  <h2>A Mix for Spring<br>Live From Green Hall</h2>
 <audio controls>
-    <source src="Poster_Radio/For_DS_A_Mix_For_Spring (1).mp3" type="audio/mp3">
+    <source src="For_DS_A_Mix_For_Spring.mp3" type="audio/mp3">
     Your browser does not support the audio element.
 </audio>
 
