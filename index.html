@@ -1,200 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>A Mix for Spring</title>
   <style>
-
-body {
-  overflow: hidden;
-  margin: 0px;
-}
-
-#animation-container {
-  width: 100%;
-  height: auto;
-}
-
-
-#image-container {
-  height: auto;
-  width: 100vw;
-  opacity: 0.6;
-}
-
-audio {
-  position: fixed;
-  z-index: 99;
-  margin-top: 16.5%;
-  margin-left: 70%;
-  mix-blend-mode: multiply;
-}
-
-h2 {
-  position: fixed;
-  z-index: 99;
-  margin-top: 6%;
-  margin-left: 5%;
-  opacity: 0;
-}
-
-#message {
-  opacity: 0;
-  position: fixed;
-}
-
-@media screen and (max-width: 768px) {
-
-  body {
-  overflow: hidden;
-  margin: 0px;
-}
-
-h2 {
-  margin-top: 20vh;
-  margin-left: 14vw;
-  margin-right: auto;
-  z-index: 99;
-  opacity: 0;
-  font-family: Times, serif;
-  font-weight: 100;
-}
-
-#message {
-  margin: auto;
-  z-index: 99;
-  opacity: 0.4;
-  mix-blend-mode: multiply;
-}
-  #animation-container {
-    width: auto;
-    height: auto;
-    opacity: 0.6;
-  }
-
-  #image-container {
-    width: auto;
-    height: 140vh;
-    opacity: 0.6; 
-  }
-
-  audio {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: auto;
-    z-index: 99;
-    mix-blend-mode: multiply; 
-  }
-
-  @media (min-width:420px)  { 
-    
     body {
-  overflow: hidden;
-  margin: 0px;
-}
+      overflow: hidden;
+      margin: 0px;
+    }
 
-#message {
-  margin: auto;
-  z-index: 99;
-  opacity: 0.4;
-  mix-blend-mode: multiply;
-}
-  #animation-container {
-    height: 100vh;
-    width: auto;
-    opacity: 0.6;
-  }
+    iframe {
+      position: fixed;
+      opacity: 0.6;
+      z-index: 99;
+      mix-blend-mode: darken;
+      max-height: 11.5%;
+    }
 
-  #image-container {
-    width: auto;
-    height: 140vh; 
-    opacity: 0.6; 
-  }
 
-  audio {
-    margin-top: 10vh;
-    margin-left: 10vw;
-    margin-right: auto;
-    z-index: 99;
-    mix-blend-mode: multiply; 
-  }
-   }
-}
+    #animation-container {
+      width: 100%;
+      height: auto;
+    }
+
+
+    #image-container {
+      height: auto;
+      width: 100vw;
+      opacity: 0.6;
+    }
+
+    audio {
+      position: fixed;
+      z-index: 99;
+      margin-top: 16.5%;
+      margin-left: 70%;
+      mix-blend-mode: multiply;
+    }
+
+    h2 {
+      position: fixed;
+      z-index: 99;
+      margin-top: 6%;
+      margin-left: 5%;
+      opacity: 0;
+    }
+
+    #message {
+      opacity: 0;
+      position: fixed;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      body {
+        overflow: hidden;
+        margin: 0px;
+      }
+
+      h2 {
+        margin-top: 20vh;
+        margin-left: 14vw;
+        margin-right: auto;
+        z-index: 99;
+        opacity: 0;
+        font-family: Times, serif;
+        font-weight: 100;
+      }
+
+      #message {
+        margin: auto;
+        z-index: 99;
+        opacity: 0.4;
+        mix-blend-mode: multiply;
+      }
+
+      #animation-container {
+        width: auto;
+        height: auto;
+        opacity: 0.6;
+      }
+
+      #image-container {
+        width: auto;
+        height: 140vh;
+        opacity: 0.6;
+      }
+
+      audio {
+        margin-top: 10vh;
+        margin-left: 10vw;
+        margin-right: auto;
+        z-index: 99;
+        mix-blend-mode: multiply;
+      }
+
+      @media (min-width:420px) {
+
+        body {
+          overflow: hidden;
+          margin: 0px;
+        }
+
+        #message {
+          margin: auto;
+          z-index: 99;
+          opacity: 0.4;
+          mix-blend-mode: multiply;
+        }
+
+        #animation-container {
+          height: 100vh;
+          width: auto;
+          opacity: 0.6;
+        }
+
+        #image-container {
+          width: auto;
+          height: 140vh;
+          opacity: 0.6;
+        }
+
+        audio {
+          margin-top: 10vh;
+          margin-left: 10vw;
+          margin-right: auto;
+          z-index: 99;
+          mix-blend-mode: multiply;
+        }
+      }
+    }
   </style>
 </head>
+
 <body>
-  
+
   <h2>A Mix for Spring<br>Live From Green Hall</h2>
 
-<audio controls preload autoplay loop>
-  <source src="https://docs.google.com/uc?export=open&id=1rYdtWl02tBJhoflvfaI2cxFkKSWN_t7z" type="audio/mp3">
-</audio>
- 
-<div>
-  <img id="message" src="Messages/Page_99.jpeg">
-</div>
+  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1713915171&color=%23b5f8bc&auto_play=true&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=false"></iframe>
+  <div
+    style="font-size: 0px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+    <a href="https://soundcloud.com/ubivanti" title="Ubii" target="_blank"
+      style="color: #cccccc; text-decoration: none;"></a> · <a
+      href="https://soundcloud.com/ubivanti/for-ds-a-mix-for-spring" title="PARK WEST NY NY -- A Mix For Spring" target="_blank"
+      style="color: #cccccc; text-decoration: none;">PARK WEST NY NY -- A Mix For Spring</a></div>
+
+
+
+  <div>
+    <img id="message" src="Messages/Page_99.jpeg">
+  </div>
 
 
   <div id="animation-container">
     <img id="image-container" src="" alt="Image">
   </div>
-  <div> 
+  <div>
     <p>
       **Tracklist**
-      Sundance		9:59	Jimi Hendrix			0	1
-      Growing/Dying		3:32	The Backseat Lovers	Waiting to Spill	Alternative	0	11
-      Some Time Alone, Alone		3:46	Melody's Echo Chamber	Melody's Echo Chamber	Alternative	0	14
-      The Title Track		2:31	Origami Angel	Somewhere City	Rock	0	5
-      The Circle Game		4:51	Joni Mitchell	Ladies of the Canyon	Pop	0	6
-      Big Yellow Taxi		2:15	Joni Mitchell	Ladies of the Canyon	Pop	0	8
-      Nobody Other		3:18	Kadhja Bonet	The Visitor	Soul	0	16
-      Les Fleurs		3:20	Minnie Riperton	Come to My Garden (Remastered)	R&B/Soul	0	12
-      Cumulus		4:44	Imogen Heap	Speak for Yourself (Deluxe Version)	Alternative	0	5
-      4:33 (Mixed)		4:00	Nils Frahm	Late Night Tales: Nils Frahm (DJ Mix)	House	0	6
-      Lost In the World (feat. Bon Iver)		4:17	Kanye West	My Beautiful Dark Twisted Fantasy	Hip-Hop/Rap	0	14
-      White (feat. John Mayer)		1:16	Frank Ocean	channel ORANGE	Pop	0	41
-      Moon River		3:08	Frank Ocean	Moon River - Single	Pop	0	35
-      Untitled Snippet		0:59	Frank Ocean		Alt	0	35
-      forever dolphin love    	0:59	King Krule		Alt 	0	35		
-      'Cello Song		4:45	Nick Drake	Five Leaves Left (Remastered)	Singer/Songwriter	0	19
-      Huit octobre 1971		4:26	Cortex	Troupeau bleu	Crossover Jazz	0	3
-      formwela 1		3:35	Esperanza Spalding	  SONGWRIGHTSAPOTHECARYLAB - Single	Jazz	0	3
-      Signal from the Noise		9:03	BADBADNOTGOOD	Talk Memory	Jazz	0	7
-      Beam/S		7:53	The Orielles	Tableau	Alternative	0	7
-      PIRATE RADIO*		3:09	Jean Dawson	PIRATE RADIO* - Single	Alternative	0	24
-      My Blueberry Life (Demo)		2:52	Current Joys	B-Sides, Rarities and Demos	Alternative	0	29
-      Late Bloomer		3:23	Mereba	Late Bloomer - Single	R&B/Soul	0	6
-      Savior Complex		3:52	Brandon	Savior Complex - Single	Pop	2	28
-      Nobody Told Me		3:34	John Lennon	Milk and Honey	Rock	2	7
-      Sundance		9:59	Jimi Hendrix			0	1 <br><br><br><br>
+      Sundance 9:59 Jimi Hendrix 0 1
+      Growing/Dying 3:32 The Backseat Lovers Waiting to Spill Alternative 0 11
+      Some Time Alone, Alone 3:46 Melody's Echo Chamber Melody's Echo Chamber Alternative 0 14
+      The Title Track 2:31 Origami Angel Somewhere City Rock 0 5
+      The Circle Game 4:51 Joni Mitchell Ladies of the Canyon Pop 0 6
+      Big Yellow Taxi 2:15 Joni Mitchell Ladies of the Canyon Pop 0 8
+      Nobody Other 3:18 Kadhja Bonet The Visitor Soul 0 16
+      Les Fleurs 3:20 Minnie Riperton Come to My Garden (Remastered) R&B/Soul 0 12
+      Cumulus 4:44 Imogen Heap Speak for Yourself (Deluxe Version) Alternative 0 5
+      4:33 (Mixed) 4:00 Nils Frahm Late Night Tales: Nils Frahm (DJ Mix) House 0 6
+      Lost In the World (feat. Bon Iver) 4:17 Kanye West My Beautiful Dark Twisted Fantasy Hip-Hop/Rap 0 14
+      White (feat. John Mayer) 1:16 Frank Ocean channel ORANGE Pop 0 41
+      Moon River 3:08 Frank Ocean Moon River - Single Pop 0 35
+      Untitled Snippet 0:59 Frank Ocean Alt 0 35
+      forever dolphin love 0:59 King Krule Alt 0 35
+      'Cello Song 4:45 Nick Drake Five Leaves Left (Remastered) Singer/Songwriter 0 19
+      Huit octobre 1971 4:26 Cortex Troupeau bleu Crossover Jazz 0 3
+      formwela 1 3:35 Esperanza Spalding SONGWRIGHTSAPOTHECARYLAB - Single Jazz 0 3
+      Signal from the Noise 9:03 BADBADNOTGOOD Talk Memory Jazz 0 7
+      Beam/S 7:53 The Orielles Tableau Alternative 0 7
+      PIRATE RADIO* 3:09 Jean Dawson PIRATE RADIO* - Single Alternative 0 24
+      My Blueberry Life (Demo) 2:52 Current Joys B-Sides, Rarities and Demos Alternative 0 29
+      Late Bloomer 3:23 Mereba Late Bloomer - Single R&B/Soul 0 6
+      Savior Complex 3:52 Brandon Savior Complex - Single Pop 2 28
+      Nobody Told Me 3:34 John Lennon Milk and Honey Rock 2 7
+      Sundance 9:59 Jimi Hendrix 0 1 <br><br><br><br>
       **Excluded**
-      Fourth Time Around		4:35	Bob Dylan	Blonde On Blonde	Rock	2	11
-Dream in the Light		2:09	Seventhgaze	Abstractions	Electronica	0	2
-Youaintshit (Shine on) [feat. Sylvie Grace]		3:04	Kweku Collins	Grey	Alternative Rap	2	17
-Shadow Man (feat. Smino, Phoelix & Saba)		5:11	Noname	Telefone	Hip-Hop/Rap	0	2
-Call Me (Freestyle)		3:05	Blood Orange & 박혜진 Park Hye Jin	CALL ME (Freestyle) - Single	Alternative	
-Blackbird (Live)		2:27	Wings	Wings Over America (Live) [2013 Remaster]	Rock	2	24
-Blood of an American		4:21	Bobby Wright	Blood of an American - Single	Soul	0	24
-Not Checking Up		4:35	Arthur Russell	Not Checking Up - Single	Alternative	0	5
-What the World Needs Now Is Love		3:10	Dionne Warwick	Here Where There Is Love	Pop	0	8
-Politics & Violence		3:18	Dominic Fike	What Could Possibly Go Wrong	Alternative	0	5
-Welcome Back (Theme from "Welcome Back, Kotter")		2:53	John Sebastian	Welcome Back	Rock	0	
-Narrow Road		6:15	DARKSIDE	Spiral	Alternative	0	1
-But You're Mine (Single Version)		3:05	Sonny & Cher	The Wonderous World of Sonny & Cher	Pop	0	5
-Genesis		4:29	Spencer.	Genesis - Single	Alternative	0	37
-Secondary Handstand		3:36	ernest rareberrg	Secondary Handstand - Single	Alternative	0	49
-Endorphins		3:26	tobi lou	Endorphins - Single	Hip-Hop/Rap	1	26
-Faith in Nothing Except in Salvation		1:33	Yves Tumor	Safe in the Hands of Love	Alternative	0	6
-Twenty Four Hours		4:28	Joy Division	Closer (Collector's Edition)	Alternative	0	10
-Boylife in EU		3:36	Yung Lean	Starz	Alternative	0	10
-Peroxide		3:34	Ecco2k	E	Alternative	0	24
-      
-      
-      
-    
-  </p>
+      Fourth Time Around 4:35 Bob Dylan Blonde On Blonde Rock 2 11
+      Dream in the Light 2:09 Seventhgaze Abstractions Electronica 0 2
+      Youaintshit (Shine on) [feat. Sylvie Grace] 3:04 Kweku Collins Grey Alternative Rap 2 17
+      Shadow Man (feat. Smino, Phoelix & Saba) 5:11 Noname Telefone Hip-Hop/Rap 0 2
+      Call Me (Freestyle) 3:05 Blood Orange & 박혜진 Park Hye Jin CALL ME (Freestyle) - Single Alternative
+      Blackbird (Live) 2:27 Wings Wings Over America (Live) [2013 Remaster] Rock 2 24
+      Blood of an American 4:21 Bobby Wright Blood of an American - Single Soul 0 24
+      Not Checking Up 4:35 Arthur Russell Not Checking Up - Single Alternative 0 5
+      What the World Needs Now Is Love 3:10 Dionne Warwick Here Where There Is Love Pop 0 8
+      Politics & Violence 3:18 Dominic Fike What Could Possibly Go Wrong Alternative 0 5
+      Welcome Back (Theme from "Welcome Back, Kotter") 2:53 John Sebastian Welcome Back Rock 0
+      Narrow Road 6:15 DARKSIDE Spiral Alternative 0 1
+      But You're Mine (Single Version) 3:05 Sonny & Cher The Wonderous World of Sonny & Cher Pop 0 5
+      Genesis 4:29 Spencer. Genesis - Single Alternative 0 37
+      Secondary Handstand 3:36 ernest rareberrg Secondary Handstand - Single Alternative 0 49
+      Endorphins 3:26 tobi lou Endorphins - Single Hip-Hop/Rap 1 26
+      Faith in Nothing Except in Salvation 1:33 Yves Tumor Safe in the Hands of Love Alternative 0 6
+      Twenty Four Hours 4:28 Joy Division Closer (Collector's Edition) Alternative 0 10
+      Boylife in EU 3:36 Yung Lean Starz Alternative 0 10
+      Peroxide 3:34 Ecco2k E Alternative 0 24
+
+
+
+
+    </p>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>

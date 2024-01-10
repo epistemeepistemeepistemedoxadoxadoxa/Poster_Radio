@@ -25,3 +25,5 @@ loadImages('Web_BG_Images', 189); // Change 'Web_BG_Images' to your folder name 
 // Show the first image immediately and then continue showing images at the specified interval
 showNextImage();
 setInterval(showNextImage, intervalTime);
+
+
