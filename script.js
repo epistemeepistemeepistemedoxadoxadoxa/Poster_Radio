@@ -1,8 +1,8 @@
 const imageContainer = document.getElementById('image-container');
 const imagePaths = []; // Array to store image paths
 let currentIndex = 0; // Current index of the displayed image
-let intervalTime = 110; // Interval time in milliseconds (adjust as needed)
-
+let intervalTime = 1000; // Interval time in milliseconds (adjust as needed)
+// let intervalTime = 110; 
 // Function to load images from a folder
 function loadImages(folderPath, imageCount) {
   for (let i = 1; i <= imageCount; i++) {
